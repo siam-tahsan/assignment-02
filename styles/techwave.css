@@ -156,6 +156,30 @@ nav h3{
     line-height: 20px;
 }
 
+/* data-card-container related styles */
+
+.data-card-container{
+    width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.data-card h2{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 58px;
+    padding-bottom: 16px;
+}
+
+.data-card p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+}
 
 
 /* small device responsive */
