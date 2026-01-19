@@ -181,6 +181,137 @@ nav h3{
     line-height: 20px;
 }
 
+/* choose-section related css */
+.section-heading{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.choose-cotainer{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.box{
+    background-color: rgba(53, 17, 101, 0.4);
+}
+
+#premium{
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+#mobile{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+#global{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+#exclusive{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+#rich{
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.card-title{
+    font-style: Bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 16px 0;
+}
+
+.card-details{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+#exclusive h4{
+    margin: 8px 0;
+}
+
+#rich h4{
+    margin: 8px 0;
+}
+
+/* featured section related css */
+
+.featured-container{
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    gap: 40px;
+}
+
+.featured-card{
+    width: 380px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 0px 0px 24px 24px;
+}
+
+.time{
+    margin-bottom: 24px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+}
+
+.ifram-details{
+    padding: 24px;
+}
+
+
 
 /* small device responsive */
 @media screen and (max-width:576px) {
