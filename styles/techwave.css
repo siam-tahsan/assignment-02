@@ -15,6 +15,12 @@ body{
 }
 
 /* nav related styles   */
+#wv{
+    background: linear-gradient(to right, rgba(145, 0, 248, 1), rgba(251, 9, 180, 1), rgba(247, 233, 63, 1));
+    color: transparent;
+    background-clip: text;
+}
+
 nav{
     max-width: 1200px;
     margin: 20px auto;
@@ -210,7 +216,6 @@ nav h3{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 16;
     padding: 40px;
     border-radius: 40px;
 }
@@ -221,7 +226,6 @@ nav h3{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 16;
     padding: 40px;
     border-radius: 40px;
 }
@@ -232,7 +236,6 @@ nav h3{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 16;
     padding: 40px;
     border-radius: 40px;
 }
@@ -243,7 +246,6 @@ nav h3{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 16;
     padding: 40px;
     border-radius: 40px;
 }
@@ -254,7 +256,6 @@ nav h3{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 16;
     padding: 40px;
     border-radius: 40px;
 }
@@ -305,11 +306,57 @@ nav h3{
     justify-content: flex-start;
     align-items: center;
     gap: 6px;
+    color: #00FF88;
 }
 
 .ifram-details{
     padding: 24px;
 }
+
+/* host section styles */
+
+.host-container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 30px;
+}
+.host-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    
+}
+
+.host-name{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0%;
+    padding-bottom: 16px;
+}
+
+.ellips{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(83, 60, 114, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+
 
 
 
