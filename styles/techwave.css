@@ -16,9 +16,11 @@ body{
 
 /* nav related styles   */
 #wv{
-    background: linear-gradient(to right, rgba(145, 0, 248, 1), rgba(251, 9, 180, 1), rgba(247, 233, 63, 1));
-    color: transparent;
+    background: linear-gradient(to right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
+    
 }
 
 nav{
@@ -58,6 +60,7 @@ nav h3{
     border-radius: 100px;
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
     border: none;
+    cursor: pointer;
 }
 
 .hemberger{
@@ -67,32 +70,31 @@ nav h3{
 
 /* hero section styles */
 
-.hero-bg img{
-    width: 100%;
+.hero-bg{
+    height: 760px;
+    background-image: url("../assets/hero-bg.png");
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 
-.circle img{
-    width: 350px;
-    height: 350px;
+.circle{
     position: absolute;
-    top: 23%;
-    left: 37.5%;
-}
+    top: 15.5%;
+    left: 37.8%;
+} 
 
 .microphone{
-    width: 200px;
-    height: 200px; 
     position: absolute; 
     top: 25%;
-    left: 42.6%;
+    left: 46%;
 }
 
 .hero-info{
     text-align: center;
-    /* position: absolute;
-    bottom: 0%;
-    left: 30%; */
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
 }
 
 .hero-info h1{
@@ -104,6 +106,7 @@ nav h3{
     font-size: 1rem;
     font-weight: 400;
     line-height: 19px;
+    padding: 12px 0;
 }
 
 .hero-btn-1{
@@ -116,6 +119,7 @@ nav h3{
     border-radius: 100px;
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
     border: none;
+    cursor: pointer;
 }
 
 .hero-btn-2{
@@ -128,18 +132,51 @@ nav h3{
     align-items: center;
     gap: 8px;
     padding: 12px 20px 12px 20px;
+    cursor: pointer;
 }
 
 .hero-btns{
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 24px;
-    margin-bottom: 150px;
+    padding-top: 12px;
 }
 
-.hero-details{
-    margin-top: 0px;
+.new{
+    width: 65px;
+    height: 30px;
+    background-color: #00FF88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 100px;
+    position: absolute;
+    top: 17%;
+    left: 55%;
+    cursor: pointer;
+
+    animation-name: moveNew;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.new h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+@keyframes moveNew {
+    0% {
+        transform: translateY(0);
+    }
+    50% { 
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -167,9 +204,15 @@ nav h3{
 .data-card-container{
     width: 1200px;
     margin: 100px auto;
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex; */
     justify-content: center;
-    gap: 80px;
+    align-items: center;
+    place-items: center;
+    gap: 160px;
+
 }
 
 .data-card h2{
@@ -189,7 +232,7 @@ nav h3{
 
 /* choose-section related css */
 .section-heading{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 58px;
     text-align: center;
@@ -314,6 +357,9 @@ nav h3{
 }
 
 /* host section styles */
+.host-section{
+    margin: 120px auto;
+}
 
 .host-container{
     width: 1200px;
@@ -356,6 +402,53 @@ nav h3{
     margin-top: 16px;
 }
 
+/* footer related styles */
+
+.footer-section{
+    height: 420px;
+    background-image: url("../assets/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.gradient{
+    font-size: 5.8rem;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.footer-links {
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.link{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.copyright{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 32px;
+    color: #FFFFFF;
+}
+
+.hide{
+    display: none !important;
+}
+
 
 
 
@@ -371,5 +464,113 @@ nav h3{
 
     .hemberger{
     display: inline;
+    }
+
+    .hero-bg{
+    height: 470px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    }
+    
+    .circle img{
+    width: 200px;
+    height: 200px;
+    
+    }
+    .circle{
+    left: 27%;
+    }
+    .microphone img{
+    width: 80px;
+    height: 80px;  
+    }
+    .microphone{
+        left: 41%;
+        top: 28%;
+    }
+    .hero-info{
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    }
+
+    .about{
+    width: 100%;
+    margin:40px 0 ;
+    }
+
+    #premium{
+        grid-column: span 2;
+    }
+
+    #rich{
+        grid-column: span 2;
+    }
+
+    .data-card-container{
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 80px;
+    }
+
+    .choose-cotainer{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    }
+
+    .featured-container{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .section-heading{
+        margin-top: 40px;
+    }
+
+    .host-content{
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .host-details{
+        place-items: center;
+    }
+
+    .host-details p{
+        text-align: center;
+    }
+
+    .host-container{
+        width: 100%;
+    }
+
+    .footer-section{
+    width: 100%;
+    /* height: 420px; */
+    background-image: url("../assets/footer-bg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .footer-links{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    .gradient{
+    font-size: 5.8rem;
+    width: 100%;
+    }
+
+    .host-section{
+    margin-top: 40px;
 }
 }
