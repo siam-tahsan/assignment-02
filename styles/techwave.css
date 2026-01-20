@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .inter-font{
@@ -552,11 +553,12 @@ nav h3{
 
     .footer-section{
     width: 100%;
-    /* height: 420px; */
-    background-image: url("../assets/footer-bg.png");
+    height: 100%;
+    background-image: url("../assets/Image.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 20px;
     }
     .footer-links{
         width: 100%;
@@ -566,11 +568,11 @@ nav h3{
     }
 
     .gradient{
-    font-size: 5.8rem;
+    font-size: 3.8rem;
     width: 100%;
     }
 
     .host-section{
-    margin-top: 40px;
+    margin-top: 0px;
 }
 }
